@@ -13,14 +13,6 @@ body {
     margin: 0 auto;
     width: 300px;
 }
-button {
-    background: #0084ff;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 14px;
-    font-size: 15px;
-    color: #fff;
-}
 #banner-message div {
     text-align: left;
 }
