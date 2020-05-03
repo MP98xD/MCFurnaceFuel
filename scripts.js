@@ -1,7 +1,6 @@
 // find elements
 let stuff = $("#stuff")
 let stacks = $("#stacks")
-let button = $("button")
 
 // Fuel Source Array
 fuelSource = [
@@ -23,7 +22,10 @@ fuelSource = [
 ]
 
 // handle click and add class
-button.on("click", function(){
+stuff.on("input", calculate)
+stacks.change(calculate)
+
+function calculate() {
     let stuffAmount = stuff.val()
     let isStack = stacks.is(":checked")
     stuffAmount *= (isStack)? 64 : 1
@@ -43,4 +45,4 @@ button.on("click", function(){
 
         $('#results table tr:last').after(output)
     }
-})
+}
